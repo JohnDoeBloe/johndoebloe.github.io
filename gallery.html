@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Luno Nail Esthetician</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="nav-button-container">
+        <div class="nav-button" onclick="toggleNav()">☰ Menu</div>
+    </div>
+    <nav id="side-nav">
+        <a href="#" class="close-btn" onclick="toggleNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="gallery.html?gallery=manicure">Manicure</a>
+        <a href="gallery.html?gallery=pedicure">Pedicure</a>
+        <a href="gallery.html?gallery=nail-art">Nail Art</a>
+        <a href="gallery.html?gallery=gel-polish">Gel Polish</a>
+        <a href="gallery.html?gallery=acrylics">Acrylics</a>
+    </nav>
+    <div class="container">
+        <a href="index.html" class="back-btn">Back to Home</a>
+        <div class="info-box">
+            <h1 id="gallery-title">Gallery</h1>
+        </div>
+        <div id="gallery" class="gallery">
+            <!-- Gallery items will be dynamically inserted here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', loadGallery);
+    </script>
+</body>
+</html>
